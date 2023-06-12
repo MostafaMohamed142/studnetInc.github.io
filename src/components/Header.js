@@ -51,7 +51,7 @@ export default function Header() {
           {/* Collapsible wrapper  */}
           <div className={`collapse navbar-collapse gap-4 ${showNav ? 'show' : ''} `} id="navbarSupportedContent">
             {/* Navbar brand  */}
-            <NavLink className="navbar-brand mt-2 mt-lg-0" href="#">
+            <NavLink className="navbar-brand mt-2 mt-lg-0" to="#">
               <img
                 src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp"
                 height="15"
@@ -66,13 +66,13 @@ export default function Header() {
              <i className="fa-brands fa-searchengin ms-n5 fs-5"></i>
              <ul className="navbar-nav mb-2 mb-lg-0 ms-lg-5">
               <li className="nav-item">
-                <NavLink className="nav-link text-light" href="#">Career Library</NavLink>
+                <NavLink className="nav-link text-light" to="#">Career Library</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link text-light" href="#">Major Library</NavLink>
+                <NavLink className="nav-link text-light" to="#">Major Library</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link text-light" href="#">School Library</NavLink>
+                <NavLink className="nav-link text-light" to="#">School Library</NavLink>
               </li>
             </ul>
             {/* Left links  */}
@@ -86,7 +86,7 @@ export default function Header() {
             <div className="dropdown">
               <NavLink
                 className="text-reset me-3 dropdown-toggle hidden-arrow"
-                href="#"
+                to="#"
                 id="navbarDropdownMenuLink"
                 role="button"
                 data-mdb-toggle="dropdown"
@@ -101,13 +101,13 @@ export default function Header() {
                 aria-labelledby="navbarDropdownMenuLink"
               >
                 <li>
-                  <NavLink className="dropdown-item" href="#">Some news</NavLink>
+                  <NavLink className="dropdown-item" to="#">Some news</NavLink>
                 </li>
                 <li>
-                  <NavLink className="dropdown-item" href="#">Another news</NavLink>
+                  <NavLink className="dropdown-item" to="#">Another news</NavLink>
                 </li>
                 <li>
-                  <NavLink className="dropdown-item" href="#">Something else here</NavLink>
+                  <NavLink className="dropdown-item" to="#">Something else here</NavLink>
                 </li>
               </ul>
             </div>
@@ -115,7 +115,7 @@ export default function Header() {
             <div className="dropdown me-4">
               <NavLink
                 className="dropdown-toggle d-flex align-items-center"
-                href="#"
+                to="#"
                 id="navbarDropdownMenuAvatar"
                 role="button"
                 data-mdb-toggle="dropdown"
@@ -141,13 +141,13 @@ export default function Header() {
                 aria-labelledby="navbarDropdownMenuAvatar"
               >
                 <li>
-                  <NavLink className="dropdown-item" href="#">My profile</NavLink>
+                  <NavLink className="dropdown-item" to="#">My profile</NavLink>
                 </li>
                 <li>
-                  <NavLink className="dropdown-item" href="#">Settings</NavLink>
+                  <NavLink className="dropdown-item" to="#">Settings</NavLink>
                 </li>
                 <li>
-                  <NavLink className="dropdown-item" href="#">Logout</NavLink>
+                  <NavLink className="dropdown-item" to="#">Logout</NavLink>
                 </li>
                 
               </ul>
