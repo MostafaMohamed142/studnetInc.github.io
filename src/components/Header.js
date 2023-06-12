@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
 import axios from 'axios';
+import logo from '../images/logo.png'
 export default function Header() {
     // states for toggling classes nav and notication and profile avatar which i set its alt to api email
     const [showNav, setShowNav] = useState(false);
@@ -45,7 +46,7 @@ export default function Header() {
             aria-label="Toggle navigation"
             onClick={()=>setShowNav(!showNav)}
           >
-            <i className="fas fa-bars"></i>
+            <i className="fas fa-bars text-light"></i>
           </button>
       
           {/* Collapsible wrapper  */}
@@ -53,8 +54,9 @@ export default function Header() {
             {/* Navbar brand  */}
             <NavLink className="navbar-brand mt-2 mt-lg-0" to="#">
               <img
-                src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp"
-                height="15"
+                src={logo}
+                width='30'
+                height="30"
                 alt="MDB Logo"
                 loading="lazy"
                 className="me-n5"
@@ -63,7 +65,7 @@ export default function Header() {
              {/* Left links  */}
              <h3 className="fs-5 p-2 mt-2 mb-2 text-light">Student <span className="text-muted">Inc.</span></h3>
              <input type="text" placeholder="search..." value={input} onChange={(e)=>setInput(e.target.value)} className="rounded p-1 text-light" style={{backgroundColor:'#252A40',border:'1px solid cornflowerblue'}}/>
-             <i className="fa-brands fa-searchengin ms-n5 fs-5"></i>
+             <i className="fa-brands fa-searchengin text-light ms-n5 fs-5"></i>
              <ul className="navbar-nav mb-2 mb-lg-0 ms-lg-5">
               <li className="nav-item">
                 <NavLink className="nav-link text-light" to="#">Career Library</NavLink>

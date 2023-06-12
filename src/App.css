@@ -1,5 +1,10 @@
 .App{
-    background-color: #252A40;
+    background-image: url('/src/images/Group.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.enter{
+    width: 30%;
 }
 .enter:hover{
     background-color: white !important;

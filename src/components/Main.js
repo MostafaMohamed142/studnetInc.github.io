@@ -14,7 +14,7 @@ const Main = () => {
       });
   return (
     // MAIN CONTENT
-    <div className='container p-5'>
+    <div className='container p-5 rounded' style={{ backgroundColor: '#252A40',filter:'drop-shadow(0px 4px 4px rgba(23, 23, 23, 0.25))',opacity:'0.9'}}>
         <div className='postion-relative'>
             <span className='text-light'><i className="fa-solid fa-clock text-light"></i> 15 Minutes</span>
             <h2 className='text-light p-4'>The Big Five: Your Gateway to Greater Discoveries!</h2>
